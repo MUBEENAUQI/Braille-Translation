@@ -1,0 +1,160 @@
+public class Solution 
+{
+   
+    public static String solution(String s)
+    {
+        String s1=" ";
+        for(int i=0;i<s.length();i++)
+        {
+        char ch=s.charAt(i);
+       
+         if (ch=='A'||ch=='B'||ch=='C'||ch=='D'||ch=='E'||ch=='F'||ch=='G'||ch=='H'||ch=='I'||ch=='J'||ch=='K'||ch=='L'||ch=='M'||ch=='N'||ch=='O'||ch=='P'||ch=='Q'||ch=='R'||ch=='S'||ch=='T'||ch=='U'||ch=='V'||ch=='W'||ch=='X'||ch=='Y'||ch=='Z')
+        {
+            s1=s1+"000001";
+            int temp=(int)ch;
+            temp=temp+32;
+            ch=(char)temp;
+        }
+        if(ch=='a')
+        {
+        s1=s1+"100000";
+        }
+        
+        else if(ch=='b') 
+        {
+        s1=s1+"110000" ;
+        }
+        
+        else if(ch=='c')
+        {
+        s1=s1+"100100" ;
+        }
+        
+        else if(ch=='d') 
+        {
+        s1=s1+"100110" ;
+        }
+        
+        else if(ch=='e') 
+        {
+        s1=s1+"100010" ;
+        }
+        
+        else if(ch=='f') 
+        {
+        s1=s1+"110100" ;
+        }
+        
+        else if(ch=='g') 
+        {
+        s1=s1+"110110" ;
+        }
+        
+        else if(ch=='h') 
+        {
+        s1=s1+"110010" ;
+        }
+        
+        else if(ch=='i') 
+        {
+        s1=s1+"010100" ;
+        }
+        
+        else if(ch=='j') 
+        {
+        s1=s1+"010110" ;
+        }
+        
+        else if(ch=='k') 
+        {
+        s1=s1+"101000" ;
+        }
+        
+        else if(ch=='l') 
+        {
+        s1=s1+"111000" ;
+        }
+        
+        else if(ch=='m') 
+        {
+        s1=s1+"101100" ;
+        }
+        
+        else if(ch=='n') 
+        {
+        s1=s1+"101110" ;
+        }
+        
+        else if(ch=='o') 
+        {
+        s1=s1+"101010" ;
+        }
+        
+        else if(ch=='p') 
+        {
+        s1=s1+"111100" ;
+        }
+        
+        else if(ch=='q') 
+        {
+        s1=s1+"111110" ;
+        }
+        
+        else if(ch=='r') 
+        {
+        s1=s1+"111010" ;
+        }
+        
+        else if(ch=='s') 
+        {
+        s1=s1+"011100" ;
+        }
+        
+        else if(ch=='t') 
+        {
+        s1=s1+"011110" ;
+        }
+        
+        else if(ch=='u') 
+        {
+        s1=s1+"101001" ;
+        }
+        
+        else if(ch=='v') 
+        {
+        s1=s1+"111001" ;
+        }
+        
+        else if(ch=='w') 
+        {
+        s1=s1+"010111" ;
+        }
+        
+        else if(ch=='x') 
+        {
+        s1=s1+"101101" ;
+        }
+        
+        else if(ch=='y') 
+        {
+        s1=s1+"101111" ;
+        }
+        
+        else if(ch=='z') 
+        {
+        s1=s1+"101011" ;
+        }
+        
+        else if(ch==' ')
+        {
+        s1=s1+"000000" ;
+        }
+        
+        else
+        {}
+        }
+     s1=s1.substring(1,s1.length());
+     return(s1);
+    }
+    
+}
